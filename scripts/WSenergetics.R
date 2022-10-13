@@ -63,9 +63,11 @@ SSTdat <- read.csv("SST.csv", header=T)
 prov.vec <- seq(0,400,10)
 
 
-####################
-## stochastic run ##
-####################
+########################
+## stochastic run 1:  ##
+## number of sharks   ##
+## from distribution  ##
+########################
 
 iter <- 10000 # number of iterations per provision increment
 
@@ -152,4 +154,112 @@ plot(prov.vec, prob.needs.met,type="l", xlab="food provisioned/day (kg)", ylab="
 abline(h=0.999, lty=2)
 abline(v=prov.vec[min(which(prob.needs.met >= 0.999))], lty=2)
 prov.vec[min(which(prob.needs.met >= 0.999))] # mass (kg) of food where Pr >= 0.999 that whale sharks' energetic needs are met
+
+needsMet.dat <- data.frame(prov.vec, prob.needs.met)
+write.table(needsMet.dat,file="prNeedsMet.csv",sep=",",row.names=T,col.names=T) # save x,y file
+
+
+
+########################
+## stochastic run 2:  ##
+## incrementing       ##
+## number of sharks   ##
+########################
+
+iter <- 10000 # number of iterations per provision increment
+
+# cycle through number of sharks
+nshark.vec <- seq(1,30,1)
+pr.mat <- matrix(data=NA, nrow=length(nshark.vec), ncol=length(prov.vec)) # storage matrix
+
+for (s in 1:length(nshark.vec)) {
+  
+  # cycle through provisioning vector
+  for (p in 1:length(prov.vec)) {
+    
+    needs.met <- rep(NA,iter) # storage vector
+    for (i in 1:iter) {
+
+      # GENERATE LENGTH DISTRIBUTION OF NUMBER OF SHARKS
+      lenDISTday.it <- rnorm(nshark.vec[s], mean=WSLmn, sd=WSLsd)
+      
+      # TRANSLATE LENGTHS TO MASSES (g)
+      massDISTday.it <- 1000*12.1*lenDISTday.it^WSLMexp
+      
+      # SAMPLE A TEMPERATURE FOR THIS DAY
+      tmpDAY <- sample(SSTdat$monthSSTmn,1,replace=T)
+      
+      # APPLY AN ACTIVITY TO EACH SHARK
+      actRindDAY <- rnorm(nshark.vec[s], mean=actRmn, sd=actRsd) # routine
+      actPindDAY <- rnorm(nshark.vec[s], mean=actPmn, sd=actPsd) # provisioning
+      
+      # SMR15 FOR EACH SHARK
+      # SMR scaling expoonent for each shark
+      SMRexpIND <- rnorm(nshark.vec[s], mean=SMRexpmn, sd=SMRexpsd)
+      
+      SMR15indDAY <- rep(NA,nshark.vec[s])
+      for (w in 1:nshark.vec[s]) {
+        SMR15indDAY[w] <- exp(SMRexpIND[w]*log(massDISTday.it[w])-SMR15int)  
+      }
+      
+      # SMR NON-PROVISIONED
+      SMRnp.vec <- tmpCoef^(1/(10/(tmpR-15)))*SMR15indDAY
+      
+      # MR NON-PROVISIONED
+      MRnp.vec <- SMRnp.vec*RMR2SMR
+      
+      # O2 NON-PROVISIONED
+      O2np.vec <- SMRnp.vec*(RMR2SMR-1) # O2 for activity (non-provisioned) (mg O2 h-1)
+      
+      # O2 FOR ACTIVITY (PROVISIONED)
+      O2p.vec <- O2np.vec/actRindDAY*actPindDAY
+      
+      # SMR (PROVISIONED)
+      SMRp.vec <- tmpCoef^(1/(10/(tmpDAY-15)))*SMR15indDAY
+      
+      # MR (PROVISIONED)
+      MRp.vec <- O2p.vec + SMRp.vec 
+      
+      # Δ 02 CONSUMPTION/HOUR
+      dO2cons.vec <- MRp.vec - MRnp.vec
+      
+      # # energy equivalent (kJ) per hour
+      Eeqh.vec <- dO2cons.vec/1000*13.6 
+      
+      # ENERGY DENSITY OF FOOD PROVIDED THAT DAY
+      EdensPMday <- rnorm(1,mean=EdensPMmn,sd=EdensPMsd)
+      
+      # BIOMASS EQUIVALENT (g FISH) PER HOUR REQUIRED TO BREAK EVEN
+      Beqh.vec <- (Eeqh.vec/EdensPMday)/Ewastage 
+      
+      # MULTIPLY BIOMASS EQUIVALENT BY NUMBER OF HOURS OF OPERATION
+      opDAY <- runif(1, min=tour.dur.min, max=tour.dur.max)
+      Beq.vec <- Beqh.vec*opDAY
+      
+      # TOTAL AMOUNT OF FISH NEEDED TO BREAK EVEN ACROSS ALL SHARKS THIS DAY (kg)
+      BeqTOT <- sum(Beq.vec, na.rm=T)/1000
+      
+      # DID AMOUNT OF FISH ACTUALLY SUPPLIED PER DAY MEET THE MINIMUM REQUIREMENT?
+      needs.met[i] <- ifelse(BeqTOT <= prov.vec[p], 1, 0)
+      
+    } # end i
+    
+    pr.mat[s,p] <- sum(needs.met)/length(na.omit(needs.met))
+    #print(paste("food provided/day = ", prov.vec[p], " (kg)", sep=""))
+    
+  } # end p
+  
+  print("##################################")
+  print(paste("number of sharks = ", nshark.vec[s], sep=""))
+  print("##################################")
+  
+} # end s
+
+heatmap(pr.mat, Rowv=NA, Colv=NA, labRow=nshark.vec, labCol=prov.vec, xlab="food provided/day (kg)", ylab="# sharks present")
+
+pr.out <- as.data.frame(pr.mat)
+colnames(pr.out) <- prov.vec
+rownames(pr.out) <- nshark.vec
+write.table(pr.out,file="prout.csv",sep=",",row.names=T,col.names=T) # save matrix of probabilities (rows = no. sharks; columns = food-provision increment)
+
 
