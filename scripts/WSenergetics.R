@@ -56,7 +56,7 @@ tour.dur.min <- 4
 tour.dur.max <- 6
 
 # sea-surface temperatures
-setwd("~/Documents/Papers/Fish/Sharks/Whale sharks/Energy")
+setwd("~/.../data/")
 SSTdat <- read.csv("SST.csv", header=T)
 
 # food provision vector (0-400 kg), in 10 kg increments
