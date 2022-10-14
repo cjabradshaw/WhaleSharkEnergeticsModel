@@ -27,3 +27,6 @@ Wildlife tourism is one of the fastest-growing sectors of the tourism industry, 
 - Hsu H, Joung S, Liu K. 2012. <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1095-8649.2012.03234.x">Fisheries, management and conservation of the whale shark <em>Rhincodon typus</em> in Taiwan</a>. <em>Journal of Fish Biology</em> 80:1595-1607
 - Motta PJ, Maslanka M, Hueter RE, Davis RL, De la Parra R, Mulvany SL, Habegger ML, Strother JA, Mara KR, Gardiner JM. 2010. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0944200610000486">Feeding anatomy, filter-feeding rate, and diet of whale sharks <em>Rhincodon typus</em> during surface ram filter feeding off the Yucatan Peninsula, Mexico</a>. <em>Zoology</em> 113:199-212
 
+## Sea-surface temperatures
+
+- Average monthly sea-surface temperatures between January 2019 and August 2022 obtained from the National Oceanographic and Atmospheric Administration (NOAA) <a href="http://www.ncei.noaa.gov/products/optimum-interpolation-sst">Optimum Interpolation SST V2 database</a> at a temperature interval = 0.5 °C in the area bounded by 0–20° N, 110–130° W
