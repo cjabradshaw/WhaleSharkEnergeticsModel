@@ -20,7 +20,7 @@ actRmn <- 0.01294 # routine activity
 actRsd <- 0.001045037
 actPmn <- 0.02453 # provisioning activity
 actPsd <- 0.005184831
-EdensPMmn <- 1.357 # energy density of provisioned meal (kj/g wet weight) (Motta, et al. 2010)
+EdensPMmn <- 1.357 # energy density of provisioned meal (kJ/g wet weight) (Motta, et al. 2010)
 EdensPMsd <- 0.084 # (Motta, et al. 2010)
 SMRexpmn <- 0.8406 # SMR scaling exponent
 SMRexpsd <- 0.0271
