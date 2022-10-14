@@ -140,7 +140,7 @@ for (p in 1:length(prov.vec)) {
     # TOTAL AMOUNT OF SHRIMP NEEDED TO BREAK EVEN ACROSS ALL SHARKS THIS DAY (kg)
     BeqTOT <- sum(Beq.vec, na.rm=T)/1000
     
-    # DID AMOUNT OF FISH ACTUALLY SUPPLIED PER DAY MEET THE MINIMUM REQUIREMENT?
+    # DID AMOUNT OF SHRIMP ACTUALLY SUPPLIED PER DAY MEET THE MINIMUM REQUIREMENT?
     needs.met[i] <- ifelse(BeqTOT <= prov.vec[p], 1, 0)
     
   } # end i
@@ -236,7 +236,7 @@ for (s in 1:length(nshark.vec)) {
       opDAY <- runif(1, min=tour.dur.min, max=tour.dur.max)
       Beq.vec <- Beqh.vec*opDAY
       
-      # TOTAL AMOUNT OF FISH NEEDED TO BREAK EVEN ACROSS ALL SHARKS THIS DAY (kg)
+      # TOTAL AMOUNT OF SHRIMP NEEDED TO BREAK EVEN ACROSS ALL SHARKS THIS DAY (kg)
       BeqTOT <- sum(Beq.vec, na.rm=T)/1000
       
       # DID AMOUNT OF SHRIMP ACTUALLY SUPPLIED PER DAY MEET THE MINIMUM REQUIREMENT?
