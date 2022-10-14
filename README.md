@@ -29,4 +29,4 @@ Wildlife tourism is one of the fastest-growing sectors of the tourism industry, 
 
 ## Sea-surface temperatures
 
-- Average monthly sea-surface temperatures between January 2019 and August 2022 (in the <a href="https://github.com/cjabradshaw/WhaleSharkEnergeticsModel/tree/main/data"><em>data</em></a> subfolder) obtained from the National Oceanographic and Atmospheric Administration (NOAA) <a href="http://www.ncei.noaa.gov/products/optimum-interpolation-sst">Optimum Interpolation SST V2 database</a> at a temperature interval = 0.5 °C in the area bounded by 0–20° N, 110–130° W
+- Average monthly sea-surface temperatures between January 2019 and August 2022 (provided in the <a href="https://github.com/cjabradshaw/WhaleSharkEnergeticsModel/tree/main/data"><em>data</em></a> subfolder) obtained from the National Oceanographic and Atmospheric Administration (NOAA) <a href="http://www.ncei.noaa.gov/products/optimum-interpolation-sst">Optimum Interpolation SST V2 database</a> at a temperature interval = 0.5 °C in the area bounded by 0–20° N, 110–130° W
