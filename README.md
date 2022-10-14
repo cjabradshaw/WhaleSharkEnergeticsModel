@@ -1,5 +1,6 @@
 # Whale shark (<em>Rhincodon typus</em>) energetics model
 <img align="right" src="www/whaleshark.webp" alt="shark" width="300" style="margin-top: 20px">
+<a href="https://zenodo.org/badge/latestdoi/550791924"><img src="https://zenodo.org/badge/550791924.svg" alt="DOI"></a>
 <br>
 <br>
 A stochastic energetics model to estimate the probability of meeting the energetic needs of whale sharks at a food-provisioned tourist site<br>
