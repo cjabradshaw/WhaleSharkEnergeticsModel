@@ -130,14 +130,14 @@ for (p in 1:length(prov.vec)) {
     # ENERGY DENSITY OF FOOD PROVIDED THAT DAY
     EdensPMday <- rnorm(1,mean=EdensPMmn,sd=EdensPMsd)
     
-    # BIOMASS EQUIVALENT (g FISH) PER HOUR REQUIRED TO BREAK EVEN
+    # BIOMASS EQUIVALENT (g SHRIMP) PER HOUR REQUIRED TO BREAK EVEN
     Beqh.vec <- (Eeqh.vec/EdensPMday)/Ewastage 
     
     # MULTIPLY BIOMASS EQUIVALENT BY NUMBER OF HOURS OF OPERATION
     opDAY <- runif(1, min=tour.dur.min, max=tour.dur.max)
     Beq.vec <- Beqh.vec*opDAY
     
-    # TOTAL AMOUNT OF FISH NEEDED TO BREAK EVEN ACROSS ALL SHARKS THIS DAY (kg)
+    # TOTAL AMOUNT OF SHRIMP NEEDED TO BREAK EVEN ACROSS ALL SHARKS THIS DAY (kg)
     BeqTOT <- sum(Beq.vec, na.rm=T)/1000
     
     # DID AMOUNT OF FISH ACTUALLY SUPPLIED PER DAY MEET THE MINIMUM REQUIREMENT?
@@ -229,7 +229,7 @@ for (s in 1:length(nshark.vec)) {
       # ENERGY DENSITY OF FOOD PROVIDED THAT DAY
       EdensPMday <- rnorm(1,mean=EdensPMmn,sd=EdensPMsd)
       
-      # BIOMASS EQUIVALENT (g FISH) PER HOUR REQUIRED TO BREAK EVEN
+      # BIOMASS EQUIVALENT (g SHRIMP) PER HOUR REQUIRED TO BREAK EVEN
       Beqh.vec <- (Eeqh.vec/EdensPMday)/Ewastage 
       
       # MULTIPLY BIOMASS EQUIVALENT BY NUMBER OF HOURS OF OPERATION
@@ -239,7 +239,7 @@ for (s in 1:length(nshark.vec)) {
       # TOTAL AMOUNT OF FISH NEEDED TO BREAK EVEN ACROSS ALL SHARKS THIS DAY (kg)
       BeqTOT <- sum(Beq.vec, na.rm=T)/1000
       
-      # DID AMOUNT OF FISH ACTUALLY SUPPLIED PER DAY MEET THE MINIMUM REQUIREMENT?
+      # DID AMOUNT OF SHRIMP ACTUALLY SUPPLIED PER DAY MEET THE MINIMUM REQUIREMENT?
       needs.met[i] <- ifelse(BeqTOT <= prov.vec[p], 1, 0)
       
     } # end i
