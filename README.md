@@ -10,7 +10,7 @@ Prof Corey J. A. Bradshaw <br>
 October 2022 <br>
 <a href=mailto:corey.bradshaw@flinders.edu.au>e-mail</a> <br>
 <br>
-model co-developed by <a href="https://www.researchgate.net/profile/Christine-Barry-4">Christine Barry</a>, <a href="https://researchnow.flinders.edu.au/en/persons/charlie-huveneers-2">Charlie Huveneers</a> & <a href="http://profiles.murdoch.edu.au/myprofile/adrian-gleiss/">Adrian Gliess</a>
+model co-developed by <a href="https://www.researchgate.net/profile/Christine-Barry-4">Christine Barry</a>, <a href="https://researchnow.flinders.edu.au/en/persons/charlie-huveneers-2">Charlie Huveneers</a> & <a href="http://profiles.murdoch.edu.au/myprofile/adrian-gleiss/">Adrian Gliess</a><br>
 <br>
 accompanies paper:<br>
 <a href="https://www.researchgate.net/profile/Christine-Barry-4">BARRY, C</a>, <a href="https://www.lamave.org/christine-tin-legaspi">C LEGASPI</a>, <a href="https://scholar.google.com/citations?user=FsRAsHcAAAAJ&hl=en">TM CLARKE</a>, <a href="https://www.researchgate.net/profile/Gonzalo-Araujo">G ARAUJO</a>, <a href="https://globalecologyflinders.com/people/#DIRECTOR">CJA BRADSHAW</a>, <a href="http://profiles.murdoch.edu.au/myprofile/adrian-gleiss/">AC GLEISS</a>, <a href="https://researchnow.flinders.edu.au/en/persons/lauren-meyer">L MEYER</a>, <a href="https://scholar.google.com/citations?user=zKpvsRUAAAAJ&hl=en">A PONZO</a>, <a href="https://researchnow.flinders.edu.au/en/persons/charlie-huveneers-2">C HUVENEERS</a>. In review. A new approach to evaluate the energetic cost of whale shark tourism. <em>Biological Conservation</em><br>
