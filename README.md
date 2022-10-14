@@ -23,7 +23,7 @@ Wildlife tourism is one of the fastest-growing sectors of the tourism industry, 
 ## References for parameter values cited in the script
 
 - Araujo G, Labaja J, Snow S, Huveneers C, Ponzo A. 2020. <a href="https://www.nature.com/articles/s41598-020-73416-2">Changes in diving behaviour and habitat use of provisioned whale sharks: implications for management</a>. <em>Scientific Reports</em> 10:1-12
-- Araujo G, Lucey A, Labaja J, So CL, Snow S, Ponzo A. 2014. <a href="https://peerj.com/articles/543/">Population structure and residency patterns of whale sharks, <em>Rhincodon typus</em>, at a provisioning site in Cebu, Philippines</a>. <em>PeerJ<em> 2:e543-e543
+- Araujo G, Lucey A, Labaja J, So CL, Snow S, Ponzo A. 2014. <a href="https://peerj.com/articles/543/">Population structure and residency patterns of whale sharks, <em>Rhincodon typus</em>, at a provisioning site in Cebu, Philippines</a>. <em>PeerJ</em> 2:e543-e543
 - Hsu H, Joung S, Liu K. 2012. <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1095-8649.2012.03234.x">Fisheries, management and conservation of the whale shark <em>Rhincodon typus</em> in Taiwan</a>. <em>Journal of Fish Biology</em> 80:1595-1607
 - Motta PJ, Maslanka M, Hueter RE, Davis RL, De la Parra R, Mulvany SL, Habegger ML, Strother JA, Mara KR, Gardiner JM. 2010. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0944200610000486">Feeding anatomy, filter-feeding rate, and diet of whale sharks <em>Rhincodon typus</em> during surface ram filter feeding off the Yucatan Peninsula, Mexico</a>. <em>Zoology</em> 113:199-212
 
