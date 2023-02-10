@@ -7,7 +7,7 @@ A stochastic energetics model to estimate the probability of meeting the energet
 <br>
 Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Bradshaw</a> <br>
 <a href="http://globalecologyflinders.com" target="_blank">Global Ecology</a> | <em><a href="https://globalecologyflinders.com/partuyarta-ngadluku-wardli-kuu/" target="_blank">Partuyarta Ngadluku Wardli Kuu</a></em>, <a href="http://flinders.edu.au" target="_blank">Flinders University</a>, Adelaide, Australia <br>
-October 2022 <br>
+October 2022 / updated February 2023<br>
 <a href=mailto:corey.bradshaw@flinders.edu.au>e-mail</a> <br>
 <br>
 model co-developed by <a href="https://www.researchgate.net/profile/Christine-Barry-4">Christine Barry</a>, <a href="https://researchnow.flinders.edu.au/en/persons/charlie-huveneers-2">Charlie Huveneers</a> & <a href="http://profiles.murdoch.edu.au/myprofile/adrian-gleiss/">Adrian Gleiss</a><br>
