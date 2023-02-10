@@ -47,6 +47,7 @@ Beqh <- (Eeqh/EdensPMmn)/Ewastage # biomass equivalent (g of fish) per hour
 
 # number of whale sharks in area
 # 14 ± 5.49 SD individual whale sharks seen in survey area daily
+# Legaspi et al. 2020
 Nws.daily.mn <- 14
 Nws.daily.sd <- 5.49
 
