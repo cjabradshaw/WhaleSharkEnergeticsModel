@@ -1,6 +1,6 @@
 ##################################
 ## whale shark energetics model ##
-## Corey Bradshaw 13.10.2022    ##
+## Corey Bradshaw 10.02.2023    ##
 ##################################
 
 ###################################################################################################################
@@ -12,7 +12,7 @@
 # fixed deterministic parameters
 tmpR <- 25 # temperature at routine (ºC)
 tmpP <- 30 # temperature at provisioning (ºC)
-tmpCoef <- 2.64 # temperature coefficient
+tmpCoef <- 2.64 # temperature coefficient (Q10)
 RMR2SMR <- 1.459854 # RMR/SMR ratio
 
 # deterministic parameters with uncertainties
@@ -46,10 +46,9 @@ Ewastage <- 0.73
 Beqh <- (Eeqh/EdensPMmn)/Ewastage # biomass equivalent (g of fish) per hour
 
 # number of whale sharks in area
-# 12.7 ± 4.3 SD individual whale sharks seen in survey area daily,
-# with max presence 26 individuals (Aug 10 2013) (Araujo, et al. 2014)
-Nws.daily.mn <- 12.7
-Nws.daily.sd <- 4.3
+# 14 ± 5.49 SD individual whale sharks seen in survey area daily
+Nws.daily.mn <- 14
+Nws.daily.sd <- 5.49
 
 # duration of tourism operation (hours)
 tour.dur.min <- 4
