@@ -3,7 +3,7 @@
 <a href="https://zenodo.org/badge/latestdoi/550791924"><img src="https://zenodo.org/badge/550791924.svg" alt="DOI"></a>
 <br>
 <br>
-A stochastic energetics model to estimate the probability of meeting the energetic needs of whale sharks at a food-provisioned tourist site<br>
+A stochastic energetics model (along with an associated global sensitivity analysis) to estimate the probability of meeting the energetic needs of whale sharks at a food-provisioned tourist site.<br>
 <br>
 Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Bradshaw</a> <br>
 <a href="http://globalecologyflinders.com" target="_blank">Global Ecology</a> | <em><a href="https://globalecologyflinders.com/partuyarta-ngadluku-wardli-kuu/" target="_blank">Partuyarta Ngadluku Wardli Kuu</a></em>, <a href="http://flinders.edu.au" target="_blank">Flinders University</a>, Adelaide, Australia <br>
