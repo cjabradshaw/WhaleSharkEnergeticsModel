@@ -5,8 +5,8 @@
 
 ###################################################################################################################
 ## accompanies paper:                                                                                            ##
-## BARRY, C, C LEGASPI, TM CLARKE, G ARAUJO, CJA BRADSHAW, AC GLEISS, L MEYER, A PONZO, C HUVENEERS. In review.  ##
-## A new approach to evaluate the energetic cost of whale shark tourism. Biological Conservation                 ##
+## BARRY, C, C LEGASPI, TM CLARKE, G ARAUJO, CJA BRADSHAW, AC GLEISS, L MEYER, C HUVENEERS. 2023.                ##
+## Estimating the energetic cost of whale shark tourism. Biological Conservation 284: 110164                     ##
 ###################################################################################################################
 
 # fixed deterministic parameters
